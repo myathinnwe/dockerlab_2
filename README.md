@@ -3,6 +3,6 @@
 
 # commands
 - docker build -t <image-name>:<img-version> . --build-arg PORT=$PORT
-- docker run <containerid>/<imageid>
+- docker run -p $PORT:$PORT <imagename>:<version>
 - docker images
 - docker ps
