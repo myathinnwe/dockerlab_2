@@ -8,8 +8,8 @@ RUN pip install --no-cache-dir Flask
 
 ARG PORT
 
-ENV port=${PORT:-5001}
+ENV PORT=$PORT
 
-EXPOSE $port
+EXPOSE $PORT
 
 CMD ["python", "app-env.py"]
