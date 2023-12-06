@@ -1,4 +1,4 @@
-FROM python:3.8-silm
+FROM python:3.8-slim
 
 WORKDIR /app
 
@@ -8,8 +8,8 @@ RUN pip install --no-cache-dir Flask
 
 ARG PORT
 
-ENV port = ${PORT:-5001}
+ENV port=${PORT:-5001}
 
-EXPOSE ${port}
+EXPOSE $port
 
-CMD ["python","app-env.py"]
+CMD ["python", "app-env.py"]
